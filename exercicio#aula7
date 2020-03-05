@@ -1,0 +1,36 @@
+algoritmo "semnome"
+var
+   ano,nasc,idade:inteiro
+
+inicio
+
+   escreva("Em que anos estamos?")
+   leia(ano)
+   escreva("Em que ano você nasceu?")
+   leia(nasc)
+   idade<- ano - nasc
+   escreval("Em",ano," você terá",idade," anos de idade!")
+   se(idade>=21)entao
+      escreval("E você já será maior de idade!")
+   fimse
+
+fimalgoritmo
+
+algoritmo "semnome"
+var
+   n1,n2,media:real
+inicio
+   escreva("Primeira nota: ")
+   leia(n1)
+   escreva("Segunda nota: ")
+   leia(n2)
+   media <- (n1+n2)/2
+   se(media >= 7)entao
+      escreval("média: ",media:2:1)
+      escreva("Aluno aprovado!")
+   senao
+      escreval("média: ",media:2:1)
+      escreva("aluno reprovado!")
+   fimse
+
+fimalgoritmo
