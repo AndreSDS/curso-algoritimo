@@ -1,0 +1,14 @@
+var
+   nasc, atual,idade: inteiro
+
+inicio
+
+      Escreva("Em que ano nós estamos?")
+      Leia(atual)
+      Escreva("Em que ano eu nasci?")
+      Leia(nasc)
+      idade<- atual-nasc
+      Escreva("Minha idade é:",idade)
+
+
+fimalgoritmo

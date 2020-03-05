@@ -1,0 +1,51 @@
+algoritmo "semnome"
+var
+
+   reais, dolares: real
+
+inicio
+
+      Escreva("Quantos Reais eu tenho?R$")
+      Leia(reais)
+      dolares <- reais/2.20
+      Escreva("Posso ter U$",dolares," dólares!")
+
+fimalgoritmo
+
+algoritmo "semnome"
+var
+
+   reais, dolares: real
+
+inicio
+
+      Escreva("Quantos Reais eu tenho?R$")
+      Leia(reais)
+      dolares <- reais/2.20
+      Escreva("Posso ter U$",dolares," dólares!")
+
+fimalgoritmo
+
+algoritmo "semnome"
+var
+   f,c:real
+inicio
+
+      Escreva("Quala temperatura aqui?")
+      Leia(f)
+      c<-(f-32)/1.8
+      Escreva("No Brasil estaria ",c:4:1," graus!")
+
+fimalgoritmo
+
+algoritmo "semnome"
+var
+   preco, imposto: real
+inicio
+
+      escreva("Qual o preço do produto? R$")
+      leia(preco)
+      imposto <-(preco * 60)/100
+      escreva("O imposto será de U$",imposto:5:1," reais!")
+
+fimalgoritmo
