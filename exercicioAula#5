@@ -1,0 +1,18 @@
+algoritmo "semnome"
+var
+
+   valEmprestado,valApagar,qtdParcelas, parcelado: real
+
+inicio
+
+      escreva("Qual valor do empréstimo?")
+      leia (valEmprestado)
+      valApagar <- ((valEmprestado * 20)/100)+valEmprestado
+      escreval("Valor total a pagar é de: ",valApagar:5:2)
+      escreva("Em quantas vezes deseja parcelar? ")
+      leia(qtdParcelas)
+      parcelado <- valApagar / qtdParcelas
+      Escreval("Parcelado em",qtdParcelas," parcelas iguais no valor de ",parcelado:4:2,"!")
+
+
+fimalgoritmo
