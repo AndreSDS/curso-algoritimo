@@ -1,0 +1,74 @@
+algoritmo "semnome"
+var
+
+   n1,n2:inteiro
+   m:real
+   a:caractere
+
+inicio
+
+   escreval("------------------------")
+   escreva("Primeira nota: ")
+   leia(n1)
+   escreva("Segunda nota ")
+   leia(n2)
+   escreval("------------------------")
+
+   m<-(n1+n2)/2
+   se(m >=9)entao
+      a<-"A"
+   senao
+      se(m>=8)e (m<9)entao
+         a<-"B"
+      senao
+         se(m>=7)e(m<8)entao
+            a<-"C"
+         senao
+            se(m>=6)e(m<7)entao
+               a<-"D"
+            senao
+               se(m>=5)e(m<6)entao
+                  a<-"E"
+               senao
+                  a<-"F"
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+
+   escreval("------------------------")
+   escreval("Média:",m)
+   escreval("Aproveitamento:",a)
+   escreval("------------------------")
+
+fimalgoritmo
+
+algoritmo "semnome"
+var
+   bangu,madureira,dif:inteiro
+   status:caractere
+
+inicio
+
+   escreval("BANGU C MADUREIRA")
+   escreval("------------------")
+   escreva("Quantos gols Bangu fez? ")
+   leia(bangu)
+   escreva("Quantos gols Madureura fez? ")
+   leia(madureira)
+   dif<-bangu - madureira
+   escreval("------------------")
+   escreval("Diferença :",dif)
+   escolha  dif
+   caso 0
+      status <-"Empate"
+   caso 1,2,3
+      status<-"Partida normal"
+   caso 4,5,6
+      status<-"Goleada"
+   fimescolha
+   escreval("Status: ",status)
+   escreval("------------------")
+
+fimalgoritmo
