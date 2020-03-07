@@ -1,0 +1,57 @@
+        algoritmo "semnome"
+var
+
+   i,f,c:inteiro
+
+inicio
+   c <- 0
+
+   escreval("---------------------")
+   escreva("Inicio: ")
+   leia(i)
+   escreva("Fim: ")
+   leia(f)
+   escreval("---------------------")
+   escreval("Contando")
+   escreval("---------------------")
+   se(i > f)entao
+      c<-i
+      enquanto (c >= f)faca
+         escreva(c,".. ")
+         c<-c-1
+      fimenquanto
+   senao
+      c<-i
+      enquanto (c <= f)faca
+         escreva(c,".. ")
+         c<-c+1
+      fimenquanto
+   fimse
+
+fimalgoritmo
+
+algoritmo "semnome"
+var
+
+   contador:inteiro
+   nomeAluno:caractere
+   notaAluno, nMelhor:real
+
+inicio
+
+   contador <- 1
+   enquanto (contador <= 4) faca
+      escreval("ALUNO ",contador)
+      escreva("Nome do aluno: ")
+      leia(nomeAluno)
+      escreva("Nota de ",nomeAluno,": ")
+      leia(notaAluno)
+      escreval("-----------------------")
+      contador <- contador +1
+      se(nMelhor < notaAluno)entao
+         nMelhor <- notaAluno
+      fimse
+   fimenquanto
+   escreval("O melhor aproveitamento foi de ",nomeAluno," com a nota ",notaAluno)
+
+fimalgoritmo

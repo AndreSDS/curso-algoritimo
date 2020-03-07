@@ -1,0 +1,38 @@
+algoritmo "semnome"
+var
+
+   contador: inteiro
+
+inicio
+
+      contador<-0
+      enquanto (contador <= 10)faca
+      escreval(contador)
+      contador<-contador+1
+      fimenquanto
+      escreval("Terminei de contar")
+
+fimalgoritmo
+
+algoritmo "semnome"
+var
+
+   contador,n,soma,maior: inteiro
+
+inicio
+
+      contador<-1
+      soma<-0
+      enquanto (contador <= 5)faca
+      escreva("Digite o",contador,"o. valor:")
+      leia(n)
+      se(maior < n)entao
+      maior <- n
+      fimse
+      soma <- soma + n
+      contador<-contador+1
+      fimenquanto
+      escreval("A soma de todos o valores foi de: ",soma)
+      escreval("O maior valor digitado foi:",maior)
+
+fimalgoritmo
