@@ -1,0 +1,83 @@
+algoritmo "semnome"
+var
+
+   resp,c:inteiro
+
+inicio
+
+   repita
+
+      escreval("==============")
+      escreval("|    MENU    |")
+      escreval("==============")
+      escreval("|[1]De 1 a 10|")
+      escreval("|[2]De 10 a 1|")
+      escreval("|[3]Sair     |")
+      escreval("==============")
+
+      leia(resp)
+
+      se(resp = 1)entao
+         c<-1
+
+         repita
+            escreva(c,"..")
+            c<-c+1
+         ate(c>10)
+         escreval("")
+
+      senao
+         se(resp = 2)entao
+            c<-10
+
+            repita
+               escreva(c,"..")
+               c<-c-1
+            ate(c<0)
+            escreval("")
+
+         fimse
+      fimse
+
+   ate(resp = 3)
+   escreva("Sair")
+
+fimalgoritmo
+
+
+inicio
+
+   escreval("============================")
+   escreval("=====SELETOR DE PESSOAS=====")
+   escreval("============================")
+
+   repita
+
+      escreva("Qualo sexo? [M/F]")
+      leia(sex)
+
+      escreva("Quala idade? ")
+      leia(idade)
+
+
+      escreval("Qual a cor do cabelo?")
+      escreval("---------------------")
+      escreval("[1] Preto")
+      escreval("[2] Castanho")
+      escreval("[3] Loiro")
+      escreval("[4] Ruivo")
+      leia(cor)
+
+      se(sex="M")e(idade>=18)e(cor= 2)entao
+         hMaior<- hMaior + 1
+      fimse
+
+      se(sex="F")e(idade>=25)e(idade<=30)e(cor=3)entao
+         mMaior <- mMaior + 1
+      fimse
+      escreva("Quer continuar? [S/N]")
+      leia(resp)
+
+   ate(resp = "N")
+   escreval("Homens maiores de 18 e castanhos: ",hMaior,"!")
+   escreval("Mulheres entre 25 e 30 loiras: ",mMaior,"!")
