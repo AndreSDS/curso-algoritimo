@@ -1,0 +1,99 @@
+algoritmo "semnome"
+var
+
+   i:inteiro
+   n , pesado: caractere
+   p, mai: real
+procedimento topo()
+inicio
+   limpatela
+   escreval("-----------------------------------")
+   escreval("        Detector de pesado         ")
+   escreval(" Maior peso até agora: ", mai, "Kg ")
+   escreval("-----------------------------------")
+fimprocedimento
+
+inicio
+   topo()
+   para i <- 1 ate 5 faca
+      escreva("Digita um nome: ")
+      leia(n)
+      escreva("Digite o peso de ",n,": ")
+      leia(p)
+      se(p > mai)entao
+         mai <- p
+         pesado <- n
+      fimse
+      topo()
+   fimpara
+   topo()
+   escreval("A pessoa mais pesada foi ", pesado,", com ", mai, "kilos.")
+fimalgoritmo
+
+algoritmo "semnome"
+var
+
+   x,y:inteiro
+
+procedimento soma(a,b: inteiro)
+inicio
+   escreval("Recebi o valor ",a)
+   escreval("Recebi o valor ",b)
+   escreval("A soma entre eles é ",a+b )
+fimprocedimento
+
+inicio
+
+   x<-5
+   y<-3
+   soma(x,y)
+
+fimalgoritmo
+
+algoritmo "semnome"
+var
+
+   n:inteiro
+
+procedimento parImpar(v:inteiro)
+inicio
+   se(v%2=0)entao
+      Escreval("O número",v," é par!")
+      senao
+      escreva("O número",v," é ímpar!")
+   fimse
+
+fimprocedimento
+
+inicio
+
+   escreva("Digite um número: ")
+   leia(n)
+   parImpar(n)
+
+fimalgoritmo
+
+algoritmo "semnome"
+var
+
+x,y:inteiro
+
+procedimento soma(var a,b:inteiro)
+inicio
+a<- a + 1
+b<- b + 2
+
+escreval("Valor de a = ",a)
+escreval("Valor de b = ",b)
+escreval("Soma a + b = ", a+b)
+fimprocedimento
+
+inicio
+
+x<- 4
+y <- 8
+soma(x,y)
+escreval("Valor de x = ", x)
+escreval("Valor de y = ", y)
+
+fimalgoritmo
